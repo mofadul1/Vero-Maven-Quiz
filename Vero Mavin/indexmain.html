@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quiz App</h1>
+        <div id="quiz">
+            <div class="quiz-header">
+                <ul class="question-tabs">
+                    <li class="question-tab active" data-question="0"><span>1</span></li>
+                    <li class="question-tab" data-question="1"><span>2</span></li>
+                    <li class="question-tab" data-question="2"><span>3</span></li>
+                    <li class="question-tab" data-question="3"><span>4</span></li>
+                    <li class="question-tab flag-tab flag-button" data-question="flag"><span>Flag</span></li>
+                </ul>
+                <h2 id="question">Question Text</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Answer</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">Answer</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+        <div id="result"></div>
+        <div class="side-panel">
+            <!-- <p><span id="current-question">1</span>/<span id="total-questions">4</span></p> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
